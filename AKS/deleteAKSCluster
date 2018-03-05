@@ -1,0 +1,5 @@
+az group delete --name acsExperimental
+az ad sp delete --id 20a270e1-a1ad-4b2c-85f3-96634fd288b4
+rm .azure/acsServicePrincipal.json
+rm .azure/acsBrowseConfig.yaml
+

@@ -1,0 +1,6 @@
+az group create --name acsExperimental --location ukwest
+az aks create --resource-group acsExperimental --name=exK8SCluster --location ukwest --admin-username emelai --kubernetes-version 1.8.1
+//az acs create --orchestrator-type=kubernetes --resource-group acsExperimental --name=exK8SCluster  --client-secret Th1s1s4b1gs3cr3T --location westeurope --agent-vm-size Standard_D11
+az aks get-credentials --resource-group acsExperimental --name exK8SCluster
+az aks  browse -g acsExperimental --name=exK8SCluster
+az aks upgrade -g acsExperimental --name=exK8SCluster --kubernetes-version 1.8.2

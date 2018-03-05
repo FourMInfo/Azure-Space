@@ -1,4 +1,3 @@
-# generally useful gitignore
 # sbt specific
 .cache
 .history
